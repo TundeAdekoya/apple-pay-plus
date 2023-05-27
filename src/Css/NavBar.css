@@ -3,6 +3,7 @@
     background-color: var(--neutral0); 
     font-size: 12px;
     display: flex;
+    margin-top: 16px;
     padding: 4px 160px;
     justify-content: space-between;
     align-items: center;
@@ -68,11 +69,13 @@ width: 100vw;
 .nav-content h2{
     font-size: 24px;
     color: var(--text-primary-black);
+    font-weight: 700;
 }
 
 .nav-content ul:nth-child(2) h2, .nav-content ul:nth-child(3) h2{
     font-size: 20px;
     color: var(--text-secondary-black);
+    font-weight: 700;
 }
 
 .nav-content h2:hover, .nav-content ul:nth-child(2) h2:hover, .nav-content ul:nth-child(3) h2:hover{
