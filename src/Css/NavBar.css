@@ -1,0 +1,80 @@
+#nav{
+    font-weight: 400;
+    background-color: var(--neutral0); 
+    font-size: 12px;
+    display: flex;
+    padding: 4px 160px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav li{
+    list-style: none;   
+}
+
+#nav li a{
+    cursor: pointer;    
+    display: block;
+}
+
+.nav-icons{
+    cursor: pointer;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--text-primary-black);
+}
+
+.nav-link:hover, .nav-link:active, .nav-link:focus{
+    color: var(--apple-blue);
+}
+
+ul .nav-link .nav-content {
+    display: none;
+}
+  
+ul .nav-link:hover .nav-content,
+ul .nav-link:focus .nav-content,
+ul .nav-link:active .nav-content 
+{
+overflow: hidden;
+width: 100vw;
+height: 75%;
+margin: auto;
+position: absolute;
+left: 0%;
+top: 48px;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+gap: 15%;
+padding: 50px 0px;
+margin: auto;
+z-index: 1;
+background-color: var(--neutral50);
+width: 100vw;
+}
+  
+.nav-content p{
+    font-size: 12px;
+    color: var(--neutral400);
+}
+
+.nav-content p:hover{
+    color: var(--text-primary-black);
+}
+
+.nav-content h2{
+    font-size: 24px;
+    color: var(--text-primary-black);
+}
+
+.nav-content ul:nth-child(2) h2, .nav-content ul:nth-child(3) h2{
+    font-size: 20px;
+    color: var(--text-secondary-black);
+}
+
+.nav-content h2:hover, .nav-content ul:nth-child(2) h2:hover, .nav-content ul:nth-child(3) h2:hover{
+    color: var(--apple-blue);
+}
