@@ -81,3 +81,7 @@ width: 100vw;
 .nav-content h2:hover, .nav-content ul:nth-child(2) h2:hover, .nav-content ul:nth-child(3) h2:hover{
     color: var(--apple-blue);
 }
+
+.nav-content ul li{
+    margin-bottom: 16px;
+}
