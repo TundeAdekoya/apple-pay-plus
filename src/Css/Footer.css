@@ -1,0 +1,10 @@
+#footer{
+    background-color: var(--neutral950);
+    padding: 112px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footer-top{
+    color: var(--text-secondary-white);
+}
