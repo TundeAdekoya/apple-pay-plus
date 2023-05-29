@@ -4,9 +4,27 @@
     font-size: 12px;
     display: flex;
     margin-top: 16px;
-    padding: 4px 160px;
-    justify-content: space-between;
+    padding: 4px 4%;
+    justify-content: center;
     align-items: center;
+    gap:4%;
+}
+
+.nav-link-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopping-bag-icon{
+    padding-left: 40px;
+}
+
+.cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
 
 #nav li{
@@ -37,8 +55,7 @@ ul .nav-link .nav-content {
   
 ul .nav-link:hover .nav-content,
 ul .nav-link:focus .nav-content,
-ul .nav-link:active .nav-content 
-{
+ul .nav-link:active .nav-content {
 overflow: hidden;
 width: 100vw;
 height: 75%;
@@ -54,7 +71,6 @@ padding: 50px 0px;
 margin: auto;
 z-index: 1;
 background-color: var(--neutral50);
-width: 100vw;
 }
   
 .nav-content p{
@@ -84,4 +100,76 @@ width: 100vw;
 
 .nav-content ul li{
     margin-bottom: 12px;
+}
+
+
+.navbar-mobile{
+    display: none;
+}
+
+@media(max-width:954px){
+
+
+    .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .nav-link{
+        font-weight: 700;
+        font-size: 24px;
+        width: 90%;
+        display: flex;
+        text-align: left;
+        color: var(--black-font-active);
+    }
+
+    ul .nav-link:focus .nav-content,
+    ul .nav-link:hover .nav-content,
+    ul .nav-link:active .nav-content, 
+    .apple-icon-web, 
+    .cta-web, 
+    .nav-link-content, 
+    #nav{
+        display: none;
+    }
+
+    .cta-mobile{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        margin-top: 16px;
+        padding: 4px 8px;
+    }
+
+    .nav-mobile{
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--neutral50);
+        z-index: 2;
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    .responsive_nav {
+        transform:translateY(100vh);
+        overflow: hidden;
+    }
+
+
+
+    ul .nav-link:hover .nav-content,
+    ul .nav-link:focus .nav-content,
+    ul .nav-link:active .nav-content{
+        display: none;
+    }
 }

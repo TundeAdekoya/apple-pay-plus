@@ -1,17 +1,30 @@
-import React from 'react'
+import React, {useRef}from 'react'
 import { NavLink } from 'react-router-dom'
 import '../Css/NavBar.css'
 import search from '../Assets/svg/search.svg'
 import appleIcon from '../Assets/svg/appleLogo.svg'
 import shoppingBag from '../Assets/svg/shoppingBag.svg'
+import menu from '../Assets/svg/menu.svg'
+import close from '../Assets/svg/close.svg'
 
 const NavBar = () => {
+    
+    const navRef = useRef(null);
+
+    const showNavbar = () => {
+        if (navRef.current) {
+            navRef.current.classList.toggle('responsive_nav');
+          }
+    }
 
   return (
     <div id='navbar' style={{ fontFamily: "SFProDisplayRegular" }} >
+
+        {/* Navbar for web */}
+
         <ul id='nav'>
-            <li>
-                <div className="nav-icons">
+            <li className='apple-icon-web'>
+                <div className="nav-icons ">
                     <img src={appleIcon} alt="" />
                 </div>
             </li>
@@ -148,7 +161,7 @@ const NavBar = () => {
             <NavLink className='nav-link'><a>Watch</a>
                 <div className="nav-content">
                     <ul>
-                        <li><p>Explore Watchc</p></li>
+                        <li><p>Explore Watch</p></li>
                         <li><h2>Explore All Apple Watch</h2></li>
                         <li><h2>Apple Watch Ultra</h2></li>
                         <li><h2>Apple watch series 8</h2></li>
@@ -310,12 +323,53 @@ const NavBar = () => {
                     <img src={search} alt="" />
                 </div>
             </li>
+
             <li>
-                <div className="nav-icons">
+                <div className="nav-icons ">
                     <img src={shoppingBag} alt="" />
                 </div>
             </li>
+
         </ul>
+
+        {/* Navbar for mobile */}
+
+        <ul className="cta-mobile navbar-mobile">
+            <li>
+                <div className="nav-icons apple-icon-mobile">
+                    <img src={appleIcon} alt="" />
+                </div>
+            </li>
+
+            <div className="nav-mobile" ref={navRef}>
+                <NavLink className='nav-link'><a>Store</a></NavLink>
+                <NavLink className='nav-link'><a>Mac</a></NavLink>
+                <NavLink className='nav-link'><a>iPad</a></NavLink>
+                <NavLink className='nav-link'><a>iPhone</a></NavLink>
+                <NavLink className='nav-link'><a>Watch</a></NavLink>
+                <NavLink className='nav-link'><a>AirPods</a></NavLink>
+                <NavLink className='nav-link'><a>TV & Home</a></NavLink>
+                <NavLink className='nav-link'><a>Entertainment</a></NavLink>
+                <NavLink className='nav-link'><a>Accessories</a></NavLink>
+                <NavLink className='nav-link'><a>Support</a></NavLink>
+                <div className= 'nav-icons nav-close-btn' onClick={showNavbar}>
+                    <img src={close} alt="" />
+                </div>  
+            </div>
+
+            <li className='flex gap-4'>
+                <div className="nav-icons">
+                    <img src={search} alt="" />
+                </div>
+                <div className="nav-icons">
+                    <img src={shoppingBag} alt="" />
+                </div>
+                <div className="nav-icons menu-icon" onClick={showNavbar}>
+                    <img src={menu} alt="" />
+                </div>
+            </li>
+        </ul>
+
     </div>
   )
 }
