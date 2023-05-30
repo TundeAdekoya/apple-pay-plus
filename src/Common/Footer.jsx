@@ -474,8 +474,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-bottom-bottom mt-3">
-              <p>Copyright © 2023 Apple Inc. All rights reserved.</p>
-              <p className=''>Privacy Policy | Terms of Use | Sales and Refunds | Legal | Site Map</p>
+              <p>Copyright © 2023 Apple Inc. All rights reserved. <span>Privacy Policy | Terms of Use | Sales and Refunds | Legal | Site Map</span></p>
               <p className=''>United States </p>
           </div>
       </section>

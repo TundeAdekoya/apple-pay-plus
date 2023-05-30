@@ -81,6 +81,12 @@
     display: none;
 }
 
+.footer-bottom-bottom span{
+    text-decoration: none;
+    margin-left: 32px;
+    color: var(--text-secondary-white);
+}
+
 
 @media(max-width:954px){
     #footer{
@@ -119,5 +125,15 @@
         justify-content: space-between;
         gap: 12px;
         flex-direction: column-reverse;
+    }
+
+    .footer-bottom-bottom span{
+        margin-left: 0px;
+        margin-top: 12px;
+    }
+
+    .footer-bottom-bottom p{
+        display: flex;
+        flex-direction: column;
     }
 }
