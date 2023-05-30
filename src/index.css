@@ -19,6 +19,10 @@
   --neutral950: #0A0A0A;
 
   --apple-blue: #417AFF;
+
+  --text-gradient:linear-gradient(to right, #1E3791 , #2948B1, #56A9FE , #56A9FE);
+
+  --nav-gradient:linear-gradient(to right, #CED5DA , #56A9FE);
 }
 
 body {

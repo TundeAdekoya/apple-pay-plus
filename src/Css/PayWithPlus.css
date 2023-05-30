@@ -1,0 +1,55 @@
+#paywithplus{
+    background-color: var(--neutral50);
+    padding: 0px 12%;
+    color: var(--text-secondary-black);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-title h2{
+    font-size: 128px;
+    /* font-weight: 700; */
+    margin-bottom: 32px;
+    background-image:var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+.main-text{
+    padding: 0px 2%;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+@media(max-width:1099px){
+    .main-title h2{
+        font-size: 96px;
+    }  
+
+    .main-text{
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+@media(max-width:799px){
+    #paywithplus{
+        text-align: left;
+    }
+    
+
+    .main-title h2{
+        font-size: 64px;
+    }  
+
+    .main-text{
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+

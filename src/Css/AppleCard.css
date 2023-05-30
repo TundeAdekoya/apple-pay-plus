@@ -1,0 +1,22 @@
+#applecard{
+    width: 100vw;
+    padding: 16px ;
+    background-image: var(--nav-gradient);
+    color: var(--text-primary-black);   
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.applecard-svg{
+    display: inline;
+}
+
+#applecard span{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
