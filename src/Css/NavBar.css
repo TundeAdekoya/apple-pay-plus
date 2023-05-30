@@ -1,13 +1,22 @@
 #nav{
     font-weight: 400;
     background-color: var(--neutral0); 
+    color: var(--text-secondary-black);
     font-size: 12px;
     display: flex;
-    margin-top: 16px;
+    margin: 12px 0px;
     padding: 4px 4%;
     justify-content: center;
     align-items: center;
     gap:4%;
+}
+
+.nav-bar-logo{
+    font-size: 16px;
+}
+
+.nav-bar-logo:hover, .nav-bar-logo:active, .nav-bar-logo:focus{
+    color: var(--text-primary-black);
 }
 
 .nav-link-content{
@@ -42,7 +51,7 @@
 
 .nav-link{
     text-decoration: none;
-    color: var(--text-primary-black);
+
 }
 
 .nav-link:hover, .nav-link:active, .nav-link:focus{
@@ -56,9 +65,8 @@ ul .nav-link .nav-content {
 ul .nav-link:hover .nav-content,
 ul .nav-link:focus .nav-content,
 ul .nav-link:active .nav-content {
-overflow: hidden;
 width: 100vw;
-height: 75%;
+height: 100vh;
 margin: auto;
 position: absolute;
 left: 0%;
@@ -139,7 +147,7 @@ background-color: var(--neutral50);
         display: flex;
         align-items:center;
         justify-content: space-between;
-        margin-top: 16px;
+        margin: 12px 0;
         padding: 4px 8px;
     }
 

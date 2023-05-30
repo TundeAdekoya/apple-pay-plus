@@ -6,7 +6,7 @@ import Footer from './Common/Footer'
 function App() {
   return (
     <div className="App">
-        {/* <NavBar/> */}
+        <NavBar/>
         <Footer/>
     </div>
   );

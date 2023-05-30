@@ -1,21 +1,23 @@
-import React, {useRef}from 'react'
+import React, {useRef, useState}from 'react'
 import { NavLink } from 'react-router-dom'
 import '../Css/NavBar.css'
-import search from '../Assets/svg/search.svg'
-import appleIcon from '../Assets/svg/appleLogo.svg'
-import shoppingBag from '../Assets/svg/shoppingBag.svg'
+
 import menu from '../Assets/svg/menu.svg'
 import close from '../Assets/svg/close.svg'
+
+import { FiSearch } from 'react-icons/fi';
+import { AiFillApple } from 'react-icons/ai';
+import { AiOutlineShopping } from 'react-icons/ai';
 
 const NavBar = () => {
     
     const navRef = useRef(null);
-
     const showNavbar = () => {
         if (navRef.current) {
             navRef.current.classList.toggle('responsive_nav');
           }
     }
+
 
   return (
     <div id='navbar' style={{ fontFamily: "SFProDisplayRegular" }} >
@@ -25,7 +27,7 @@ const NavBar = () => {
         <ul id='nav'>
             <li className='apple-icon-web'>
                 <div className="nav-icons ">
-                    <img src={appleIcon} alt="" />
+                    <AiFillApple className='nav-bar-logo'/>
                 </div>
             </li>
 
@@ -320,13 +322,13 @@ const NavBar = () => {
 
             <li>
                 <div className="nav-icons">
-                    <img src={search} alt="" />
+                    <FiSearch className='nav-bar-logo' />
                 </div>
             </li>
 
             <li>
                 <div className="nav-icons ">
-                    <img src={shoppingBag} alt="" />
+                    <AiOutlineShopping className='nav-bar-logo' />
                 </div>
             </li>
 
@@ -337,7 +339,7 @@ const NavBar = () => {
         <ul className="cta-mobile navbar-mobile">
             <li>
                 <div className="nav-icons apple-icon-mobile">
-                    <img src={appleIcon} alt="" />
+                    <AiFillApple className='nav-bar-logo'/>
                 </div>
             </li>
 
@@ -359,10 +361,10 @@ const NavBar = () => {
 
             <li className='flex gap-4'>
                 <div className="nav-icons">
-                    <img src={search} alt="" />
+                    <FiSearch className='nav-bar-logo' />
                 </div>
                 <div className="nav-icons">
-                    <img src={shoppingBag} alt="" />
+                    <AiOutlineShopping className='nav-bar-logo' />
                 </div>
                 <div className="nav-icons menu-icon" onClick={showNavbar}>
                     <img src={menu} alt="" />
