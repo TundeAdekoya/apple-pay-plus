@@ -1,0 +1,107 @@
+#whatitdoes{
+    padding: 80px 12% ;
+    
+}
+
+#whatitdoes h2{
+    font-size: 96px;
+    text-align: center;
+}
+
+.whatitdoes-image{
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    gap: 25vw;
+    scroll-snap-type: x mandatory;
+}
+
+/* horizontal scroll bar --begin */
+
+.whatitdoes-image::-webkit-scrollbar{
+    width: 10vw;
+    height: 6px;
+    cursor: pointer;
+    margin: 0 50vw;
+}
+
+.whatitdoes-image::-webkit-scrollbar-track{
+    background-color: var(--neutral0);
+}
+
+.whatitdoes-image::-webkit-scrollbar-thumb{
+    background-color: var(--text-secondary-black);
+    border-radius: 100px;
+    height: 10vh;
+    width:10vw;
+}
+
+.whatitdoes-image::-webkit-scrollbar-thumb:hover{
+    background-color: var(--apple-blue);
+}
+
+/* horizontal scroll bar --end */
+
+.whatitdoesimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 40px;
+    scroll-snap-align: start;
+}
+
+.whatitdoesimg .what-img1{
+    width:1000px;
+    height: 500px;
+    background-image: url('../Assets/svg/whatitdoesImg1.svg'); 
+    background-size:cover; 
+    background-position:top;
+}
+.whatitdoesimg .what-img2{
+    width:800px;
+    height: 500px;
+    background-image: url('../Assets/svg/whatitdoesImg4.svg'); 
+    background-size:cover; 
+    background-position:top;
+}
+
+.whatitdoesimg .what-img3{
+    width:1100px;
+    height: 500px;
+    background-image: url('../Assets/svg/whatitdoesImg5.svg'); 
+    background-size:cover; 
+    background-position:top;
+}
+
+.what-text h3{
+    font-size: 32px;
+    color: var(--text-primary-black);
+    letter-spacing: -0.5px;
+}
+
+.what-text p{
+    letter-spacing: .5px;
+    font-size: 24px;
+    color: var(--text-secondary-black);
+    margin-bottom: 32px;
+    margin-top: 4px;
+}
+
+.what-text span{
+    letter-spacing: -0.2px;
+    font-size: 22px;
+    color: var(--text-secondary-black);
+    background-image:var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+
+.what-text span img{
+    display: inline-block;
+    width: 16px;
+}

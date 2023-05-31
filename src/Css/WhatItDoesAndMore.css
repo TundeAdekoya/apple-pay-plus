@@ -1,0 +1,56 @@
+#WhatItDoesAndMore{
+    padding: 80px 12%;
+}
+
+#WhatItDoesAndMore h2{
+    text-align: center;
+    font-size: 96px;
+}
+
+.WhatItDoesAndMore-content{
+    text-align: left;
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.WhatItDoesAndMore-content p{
+    font-size: 64px;
+    color: var(--neutral400);
+}
+
+.whatitdoesandmore-img{
+    display: inline-block;
+    width: 8%;
+}
+
+.whatitdoesandmore-bottom{
+    margin-top: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whatitdoesandmoreimg{
+    margin-bottom: 80px;
+}
+
+.whatitdoesandmore-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.whatitdoesandmore-text h3{
+    color: var(--text-primary-black);
+    font-size: 32px;
+    letter-spacing: -.5px;
+    margin-bottom: 8px;
+}
+
+.whatitdoesandmore-text p{
+    color: var(--text-secondary-black);
+    font-size: 24px;
+}

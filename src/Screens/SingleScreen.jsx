@@ -3,6 +3,8 @@ import Home from '../Components/Home'
 import PayWithPlus from '../Components/PayWithPlus'
 import Benefits from '../Components/Benefits'
 import '../Css/SingleScreen.css'
+import WhatItDoes from '../Components/WhatItDoes'
+import WhatItDoesAndMore from '../Components/WhatItDoesAndMore'
 
 const SingleScreen = () => {
   return (
@@ -10,6 +12,8 @@ const SingleScreen = () => {
         <Home/>
         <PayWithPlus/>
         <Benefits/>
+        <WhatItDoes/>
+        <WhatItDoesAndMore/>
     </div>
   )
 }

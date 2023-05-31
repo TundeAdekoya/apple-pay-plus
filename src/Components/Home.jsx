@@ -1,8 +1,8 @@
 import React from 'react'
 import '../Css/Home.css'
-import homePagePicture from '../Assets/png/homepagepicture.png'
-import applepaylogo from '../Assets/png/applepaylogo.png'
-import plus from '../Assets/png/plus.png'
+import homePagePicture from '../Assets/svg/homepagepicture.svg'
+import applepaylogo from '../Assets/svg/applepaylogo.svg'
+import plus from '../Assets/svg/plus.svg'
 
 
 const Home = () => {
