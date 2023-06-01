@@ -1,0 +1,30 @@
+#getstarted{
+    background-color: var(--neutral50);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 12%;
+
+}
+
+#getstarted h2{
+    font-size: 128px;
+    background-image:var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+@media(max-width:1099px){
+    #getstarted h2{
+        font-size: 96px;
+    }
+}
+
+@media(max-width:799px){
+    #getstarted h2{
+        font-size: 64px;
+    }
+}

@@ -9,12 +9,12 @@
 }
 
 .whatitdoes-image{
-    margin-top: 120px;
+    margin-top: 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow-x: scroll;
-    gap: 25vw;
+    gap: 24vw;
     scroll-snap-type: x mandatory;
 }
 
@@ -104,4 +104,61 @@
 .what-text span img{
     display: inline-block;
     width: 16px;
+}
+
+@media(max-width:1099px){
+    #whatitdoes h2{
+        font-size: 64px;
+    }
+
+    .whatitdoesimg{
+        padding: 8px;
+    }
+
+    .whatitdoesimg .what-img1, .whatitdoesimg .what-img3{
+        width:800px;
+        height: 300px;
+    }
+
+    .whatitdoesimg .what-img2{
+        width:600px;
+        height: 300px;
+    }
+
+    .whatitdoes-image{
+        scroll-snap-type:none;
+    }
+}
+
+@media(max-width:799px){
+
+
+    #whatitdoes h2{
+        font-size: 48px;
+        text-align: left;
+    }
+
+    .whatitdoes-image{
+        flex-direction: column;
+        justify-content: center;
+        overflow-x: none;
+    }
+
+    .whatitdoesimg{
+        flex-direction: column;
+    }
+
+
+    .whatitdoesimg .what-img2,  .whatitdoesimg .what-img1, .whatitdoesimg .what-img3{
+        width:300px;
+    }
+
+    .what-text {
+        margin: 0px 8px;
+    }
+
+    .whatitdoes-image::-webkit-scrollbar{
+        display: none;
+    }
+
 }

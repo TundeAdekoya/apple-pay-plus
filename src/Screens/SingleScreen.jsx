@@ -5,6 +5,8 @@ import Benefits from '../Components/Benefits'
 import '../Css/SingleScreen.css'
 import WhatItDoes from '../Components/WhatItDoes'
 import WhatItDoesAndMore from '../Components/WhatItDoesAndMore'
+import SafeAndSecure from '../Components/SafeAndSecure.jsx'
+import GetStarted from '../Components/GetStarted.jsx'
 
 const SingleScreen = () => {
   return (
@@ -14,6 +16,8 @@ const SingleScreen = () => {
         <Benefits/>
         <WhatItDoes/>
         <WhatItDoesAndMore/>
+        <SafeAndSecure/>
+        <GetStarted/>
     </div>
   )
 }

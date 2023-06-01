@@ -34,6 +34,7 @@
 
 .whatitdoesandmoreimg{
     margin-bottom: 80px;
+    width: 95vw;
 }
 
 .whatitdoesandmore-text{
@@ -53,4 +54,43 @@
 .whatitdoesandmore-text p{
     color: var(--text-secondary-black);
     font-size: 24px;
+}
+
+@media(max-width:1099px){
+    #WhatItDoesAndMore h2{
+        font-size: 64px;
+    }
+
+    .WhatItDoesAndMore-content p{
+        font-size: 48px;
+    }
+
+    .whatitdoesandmore-bottom{
+        margin-top: 120px;
+    }
+    
+}
+
+@media(max-width:799px){
+    #WhatItDoesAndMore h2{
+        font-size: 48px;
+    }
+
+    .WhatItDoesAndMore-content p{
+        font-size: 32px;
+    }
+
+    .whatitdoesandmore-text{
+        flex-direction: column;
+    }
+
+    .whatitdoesandmore-text-bottom{
+        margin-top: 32px;
+    }
+
+    .whatitdoesandmoreimg{
+       width: 150vw;
+       overflow: hidden;
+       margin-right: 60vw;
+    }
 }
