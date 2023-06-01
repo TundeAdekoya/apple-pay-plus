@@ -5,6 +5,8 @@ import '../Css/NavBar.css'
 import menu from '../Assets/svg/menu.svg'
 import close from '../Assets/svg/close.svg'
 
+import { MdClose } from 'react-icons/md';
+import { TbMenu } from 'react-icons/tb';
 import { FiSearch } from 'react-icons/fi';
 import { AiFillApple } from 'react-icons/ai';
 import { AiOutlineShopping } from 'react-icons/ai';
@@ -356,7 +358,7 @@ const NavBar = () => {
                 <NavLink className='nav-link'><a>Accessories</a></NavLink>
                 <NavLink className='nav-link'><a>Support</a></NavLink>
                 <div className= 'nav-icons nav-close-btn' onClick={showNavbar}>
-                    <img src={close} alt="" />
+                    <MdClose className='nav-bar-logo' />
                 </div>  
             </div>
 
@@ -367,8 +369,8 @@ const NavBar = () => {
                 <div className="nav-icons">
                     <AiOutlineShopping className='nav-bar-logo' />
                 </div>
-                <div className="nav-icons menu-icon" onClick={showNavbar}>
-                    <img src={menu} alt="" />
+                <div className="nav-icons " onClick={showNavbar}>
+                    <TbMenu className='nav-bar-logo' />
                 </div>
             </li>
         </ul>

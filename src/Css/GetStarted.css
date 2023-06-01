@@ -1,6 +1,5 @@
 #getstarted{
     background-color: var(--neutral50);
-    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,5 +25,10 @@
 @media(max-width:799px){
     #getstarted h2{
         font-size: 64px;
+    }
+
+    #getstarted{
+        padding: 20vh 8%;
+    
     }
 }

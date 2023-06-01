@@ -181,3 +181,10 @@ background-color: var(--neutral50);
         display: none;
     }
 }
+
+@media(max-width:799px){
+
+    .nav-bar-logo{
+        font-size: 24px;
+    }
+}

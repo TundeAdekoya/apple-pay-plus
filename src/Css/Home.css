@@ -33,6 +33,11 @@
     margin: 0px auto;
 }
 
+@media(max-width:799px){
+    #home{
+        padding: 64px 8%;
+    }
+}
 
 @media(max-width:599px){
     .home-text p{

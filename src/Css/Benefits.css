@@ -32,6 +32,7 @@
     .benefit-text{
         font-size: 32px;
         text-align: left;
+        padding: 80px 8% 160px 8%;
     }
 
     .benefit-text p:nth-child(1), .benefit-text p:nth-child(2), .benefit-text p:nth-child(3){

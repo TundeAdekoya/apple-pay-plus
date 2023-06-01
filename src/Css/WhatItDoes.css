@@ -1,6 +1,5 @@
 #whatitdoes{
     padding: 80px 12% ;
-    
 }
 
 #whatitdoes h2{
@@ -11,11 +10,10 @@
 .whatitdoes-image{
     margin-top: 64px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    overflow-x: scroll;
-    gap: 24vw;
-    scroll-snap-type: x mandatory;
+    justify-content: center;
+    gap: 80px;
 }
 
 
@@ -43,38 +41,30 @@
     background-color: var(--apple-blue);
 }
 
-/* horizontal scroll bar --end */
-
 .whatitdoesimg{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
-    padding: 40px;
+    gap: 56px;
     scroll-snap-align: start;
 }
 
-.whatitdoesimg .what-img1{
-    width:1000px;
-    height: 500px;
-    background-image: url('../Assets/svg/whatitdoesImg1.svg'); 
-    background-size:cover; 
-    background-position:top;
-}
-.whatitdoesimg .what-img2{
-    width:800px;
-    height: 500px;
-    background-image: url('../Assets/svg/whatitdoesImg4.svg'); 
-    background-size:cover; 
-    background-position:top;
+.what-img1 img, .what-img2 img, .what-img3 img{
+    width: 22vw;
 }
 
-.whatitdoesimg .what-img3{
-    width:1100px;
-    height: 500px;
-    background-image: url('../Assets/svg/whatitdoesImg5.svg'); 
-    background-size:cover; 
-    background-position:top;
+.what-text{
+    width: 30vw;
+}
+
+.what-text span img{
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.what-text span:hover img{
+    opacity: 1;
+    transform: translateX(24px);
+    
 }
 
 .what-text h3{
@@ -107,31 +97,43 @@
     width: 16px;
 }
 
+.what-img1 .mobile, .what-img2 .mobile, .what-img3 .mobile{
+    display: none;
+}
+
+.what-img1 .web, .what-img2 .web, .what-img3 .web{
+    display: block;
+}
+
 @media(max-width:1099px){
     #whatitdoes h2{
         font-size: 64px;
     }
 
-    .whatitdoesimg{
-        padding: 8px;
+    .what-text{
+        width: 50vw;
     }
-
-    .whatitdoesimg .what-img1, .whatitdoesimg .what-img3{
-        width:800px;
-        height: 300px;
-    }
-
-    .whatitdoesimg .what-img2{
-        width:600px;
-        height: 300px;
-    }
-
-    .whatitdoes-image{
-        scroll-snap-type:none;
-    }
+    
 }
 
 @media(max-width:799px){
+
+    .what-img1 , .what-img2 , .what-img3 {
+        /* width: 50vw; */
+    }
+
+    .what-img1 .mobile, .what-img2 .mobile, .what-img3 .mobile{
+        display: block;
+        width: 50vw;
+    }
+
+    .what-img1 .web, .what-img2 .web, .what-img3 .web{
+        display: none;
+    }
+
+    .what-img1 img, .what-img2 img, .what-img3 img{
+        width: 22vw;
+    }
 
 
     #whatitdoes h2{
@@ -142,28 +144,18 @@
     .whatitdoes-image{
         flex-direction: column;
         justify-content: center;
-        overflow-x: none;
     }
 
     .whatitdoesimg{
         flex-direction: column;
     }
 
-
-    .whatitdoesimg .what-img2,  .whatitdoesimg .what-img1, .whatitdoesimg .what-img3{
-        width:300px;
+    .what-text{
+        width: 100%;
     }
-
-    .what-text {
-        margin: 0px 8px;
+    
+    #whatitdoes{
+        padding: 80px 8% ;
     }
-
-    .whatitdoes-image::-webkit-scrollbar{
-        display: none;
-    }
-
-}
-
-@media(max-width:499px){
-
+    
 }

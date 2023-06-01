@@ -94,4 +94,9 @@
        overflow: hidden;
        margin-right: 60vw;
     }
+
+    #WhatItDoesAndMore{
+        padding: 80px 8%;
+    }
+    
 }

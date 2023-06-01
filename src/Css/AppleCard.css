@@ -19,4 +19,13 @@
 #applecard span{
     text-decoration: underline;
     text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+#applecard p .applecard-svg{
+    transition: transform 0.5s ease;
+}
+
+#applecard p:hover .applecard-svg{
+    transform: translateX(24px);
 }
