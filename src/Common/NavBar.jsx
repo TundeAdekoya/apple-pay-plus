@@ -12,6 +12,7 @@ import { AiOutlineShopping } from 'react-icons/ai';
 const NavBar = () => {
     
     const navRef = useRef(null);
+    
     const showNavbar = () => {
         if (navRef.current) {
             navRef.current.classList.toggle('responsive_nav');

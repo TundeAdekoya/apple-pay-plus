@@ -1,6 +1,6 @@
 #safeandsecure{
     background-color: var(--neutral950);
-    padding: 96px 12%;
+    padding: 96px 5%;
 }
 
 #safeandsecure h2{
@@ -35,6 +35,8 @@
     font-size: 20px;
     color: var(--text-secondary-white);
     font-weight: 100;
+    letter-spacing: -0.7px;
+    margin-top: 8px;
 }
 
 
@@ -51,6 +53,14 @@
         font-size: 48px;
     }
 
+    #safeandsecure h3{
+        font-size: 32px;
+    }
+
+    #safeandsecure p{
+        font-size: 24px;
+    }
+
     .safeandsecure-content{
         flex-direction: column;
     }
@@ -58,4 +68,9 @@
     .safeandsecure-content-one{
         width: 100%;
     }
+
+    #safeandsecure{
+        padding: 96px 12%;
+    }
+    
 }

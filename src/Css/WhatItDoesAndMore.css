@@ -17,7 +17,7 @@
 
 .WhatItDoesAndMore-content p{
     font-size: 64px;
-    color: var(--neutral400);
+    color: var(--neutral300);
 }
 
 .whatitdoesandmore-img{
@@ -34,7 +34,7 @@
 
 .whatitdoesandmoreimg{
     margin-bottom: 80px;
-    width: 95vw;
+    width: 85vw;
 }
 
 .whatitdoesandmore-text{
@@ -54,6 +54,7 @@
 .whatitdoesandmore-text p{
     color: var(--text-secondary-black);
     font-size: 24px;
+    letter-spacing: -0.7px;
 }
 
 @media(max-width:1099px){

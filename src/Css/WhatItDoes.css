@@ -18,6 +18,7 @@
     scroll-snap-type: x mandatory;
 }
 
+
 /* horizontal scroll bar --begin */
 
 .whatitdoes-image::-webkit-scrollbar{
@@ -83,7 +84,7 @@
 }
 
 .what-text p{
-    letter-spacing: .5px;
+    letter-spacing: -0.7px;
     font-size: 24px;
     color: var(--text-secondary-black);
     margin-bottom: 32px;
@@ -160,5 +161,9 @@
     .whatitdoes-image::-webkit-scrollbar{
         display: none;
     }
+
+}
+
+@media(max-width:499px){
 
 }

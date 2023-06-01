@@ -31,11 +31,11 @@ const WhatItDoesAndMore = () => {
             <div className="whatitdoesandmore-text">
                 <div className="">
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} >At stores and more.</h3>
-                    <p style={{ fontFamily: "SFProDisplayRegular" }}>Apple Pay+ is accepted at over 85 percent of retailers in the U.S., so you can likely use it wherever and however you want. If you’re not sure, just ask.</p>
+                    <p style={{ fontFamily: "SFProTextRegular" }}>Apple Pay+ is accepted at over 85 percent of retailers in the U.S., so you can likely use it wherever and however you want. If you’re not sure, just ask.</p>
                 </div>
                 <div className="whatitdoesandmore-text-bottom">
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} >In apps and online.</h3>
-                    <p style={{ fontFamily: "SFProDisplayRegular" }}>Use Apple Pay+ for purchases in Safari on your iPhone, iPad, or Mac. You can skip the lengthy checkout forms and pay with just a touch or a glance.</p>
+                    <p style={{ fontFamily: "SFProTextRegular" }}>Use Apple Pay+ for purchases in Safari on your iPhone, iPad, or Mac. You can skip the lengthy checkout forms and pay with just a touch or a glance.</p>
                 </div>
             </div>
         </div>

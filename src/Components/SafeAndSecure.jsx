@@ -16,7 +16,7 @@ const SafeAndSecure = () => {
                 </div>
                 <div className="safeandsecure-text">
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} >Personal data. Protected.</h3>
-                    <p style={{ fontFamily: "SFProDisplayRegular" }} >When you make a purchase, Apple Pay+ uses a device-specific number and unique transaction code. So your card number is never stored on your device or on Apple servers. </p>
+                    <p style={{ fontFamily: "SFProTextRegular" }} >When you make a purchase, Apple Pay+ uses a device-specific number and unique transaction code. So your card number is never stored on your device or on Apple servers. </p>
                 </div>
             </div>
 
@@ -26,7 +26,7 @@ const SafeAndSecure = () => {
                 </div>
                 <div className="safeandsecure-text">
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} >Your purchases stay private.</h3>
-                    <p style={{ fontFamily: "SFProDisplayRegular" }} >When you pay with a debit or credit card, Apple Pay+ doesn’t keep transaction information that can be tied back to you.</p>
+                    <p style={{ fontFamily: "SFProTextRegular" }} >When you pay with a debit or credit card, Apple Pay+ doesn’t keep transaction information that can be tied back to you.</p>
                 </div>
             </div>
 
@@ -36,7 +36,7 @@ const SafeAndSecure = () => {
                 </div>
                 <div className="safeandsecure-text">
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} >Tap more. Touch less. </h3>
-                    <p style={{ fontFamily: "SFProDisplayRegular" }} >Apple Pay+ works right from your device, helping you avoid touching buttons and terminals, handling cards, and exchanging cash. </p>
+                    <p style={{ fontFamily: "SFProTextRegular" }} >Apple Pay+ works right from your device, helping you avoid touching buttons and terminals, handling cards, and exchanging cash. </p>
                 </div>
             </div>
 

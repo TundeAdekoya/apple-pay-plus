@@ -65,7 +65,7 @@ ul .nav-link .nav-content {
 ul .nav-link:hover .nav-content,
 ul .nav-link:focus .nav-content,
 ul .nav-link:active .nav-content {
-width: 100vw;
+width: 100%;
 height: 100vh;
 margin: auto;
 position: absolute;
