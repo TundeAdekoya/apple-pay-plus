@@ -185,6 +185,6 @@ background-color: var(--neutral50);
 @media(max-width:799px){
 
     .nav-bar-logo{
-        font-size: 24px;
+        font-size: 18px;
     }
 }

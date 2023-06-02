@@ -43,4 +43,9 @@
     .home-text p{
         font-size: 17px;
     }
+
+    #home{
+        padding: 64px 48px;
+    }
+    
 }
