@@ -96,10 +96,6 @@
 
 @media(max-width:799px){
 
-    .what-img1 , .what-img2 , .what-img3 {
-        /* width: 50vw; */
-    }
-
     .what-img1 .mobile, .what-img2 .mobile, .what-img3 .mobile{
         display: block;
         width: 50vw;
@@ -136,15 +132,4 @@
         padding: 80px 24px ;
     }
     
-    .what-text h3{
-        font-size: 19px;
-    }
-    
-    .what-text p{
-        font-size: 15px;
-    }
-    
-    .what-text span{
-        font-size: 17px;
-    }
 }
