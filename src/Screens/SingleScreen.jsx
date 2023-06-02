@@ -9,6 +9,7 @@ import SafeAndSecure from '../Components/SafeAndSecure.jsx'
 import GetStarted from '../Components/GetStarted.jsx'
 import CardSection from '../Components/CardSection.jsx'
 import QnA from '../Components/QnA.jsx'
+import Process from '../Components/Process.jsx'
 
 const SingleScreen = () => {
   return (
@@ -22,6 +23,7 @@ const SingleScreen = () => {
         <GetStarted/>
         <CardSection/>
         <QnA/>
+        {/* <Process/> */}
     </div>
   )
 }

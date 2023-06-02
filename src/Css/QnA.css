@@ -24,6 +24,7 @@
 
 .qna{
     border-bottom: 1px solid var(--neutral300);
+    width: 100%;
 }
 
 .qna-top{
@@ -64,7 +65,6 @@
         padding: 64px 24px;
     }
     
-
     #questionandanswer h2{
         font-size: 48px;
     }

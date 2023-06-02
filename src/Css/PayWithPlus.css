@@ -12,7 +12,6 @@
 
 .main-title h2{
     font-size: 128px;
-    /* font-weight: 700; */
     margin-bottom: 32px;
     background-image:var(--text-gradient);
     -webkit-background-clip: text;
@@ -42,7 +41,6 @@
         text-align: left;
     }
     
-
     .main-title h2{
         font-size: 64px;
     }  
