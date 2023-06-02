@@ -155,7 +155,18 @@
     }
     
     #whatitdoes{
-        padding: 80px 8% ;
+        padding: 80px 24px ;
     }
     
+    .what-text h3{
+        font-size: 19px;
+    }
+    
+    .what-text p{
+        font-size: 15px;
+    }
+    
+    .what-text span{
+        font-size: 17px;
+    }
 }

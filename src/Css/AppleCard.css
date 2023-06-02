@@ -29,3 +29,9 @@
 #applecard p:hover .applecard-svg{
     transform: translateX(24px);
 }
+
+@media(width:799px){
+    #applecard{
+        font-size: 15px;
+    }
+}
