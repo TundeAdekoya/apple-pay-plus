@@ -1,4 +1,4 @@
-import React, {useRef, useState}from 'react'
+import React, {useRef, useState,  useEffect}from 'react'
 import { NavLink } from 'react-router-dom'
 import '../Css/NavBar.css'
 
@@ -10,10 +10,28 @@ import { TbMenu } from 'react-icons/tb';
 import { FiSearch } from 'react-icons/fi';
 import { AiFillApple } from 'react-icons/ai';
 import { AiOutlineShopping } from 'react-icons/ai';
+import {Elastic, gsap} from 'gsap'
 
 const NavBar = () => {
-    
+
+    const [isActive, setIsActive] = useState(false);
     const navRef = useRef(null);
+    const divRef = useRef(null);
+
+
+    let navele1 =useRef(null)
+    let navele2 =useRef(null)
+    let navele3 =useRef(null)
+    let navele4 =useRef(null)
+    let navele5 =useRef(null)
+    let navele6 =useRef(null)
+    let navele7 =useRef(null)
+    let navele8 =useRef(null)
+    let navele9 =useRef(null)
+    let navele10 =useRef(null)
+    let navele11 =useRef(null)
+    let navele12 =useRef(null)
+    let navele13 =useRef(null)
     
     const showNavbar = () => {
         if (navRef.current) {
@@ -21,20 +39,33 @@ const NavBar = () => {
           }
     }
 
+    
+
+    useEffect(() => {
+     
+    gsap.fromTo(
+        [navele1.current, navele2.current, navele3.current, navele4.current, navele5.current, navele6.current, navele7.current, navele8.current, navele9.current, navele10.current, navele11.current, navele12.current, navele13.current], 
+        {y:-10, opacity:0}, 
+        {y:0, opacity:1,  duration:1.5, ease:Elastic}
+    )
+
+    }, [])
+    
+
 
   return (
     <div id='navbar' style={{ fontFamily: "SFProDisplayRegular" }} >
 
         {/* Navbar for web */}
 
-        <ul id='nav'>
+        <ul id='nav' >
             <li className='apple-icon-web'>
-                <div className="nav-icons ">
+                <div className="nav-icons " ref={navele1}>
                     <AiFillApple className='nav-bar-logo'/>
                 </div>
             </li>
 
-            <NavLink className='nav-link'><a>Store</a>
+            <NavLink className='nav-link'><a ref={navele2}>Store</a>
                  <div className="nav-content">
                     <ul>
                         <li><p>Shop</p></li>
@@ -64,7 +95,7 @@ const NavBar = () => {
                 
             </NavLink>
 
-            <NavLink className='nav-link'><a>Mac</a>
+            <NavLink className='nav-link'><a ref={navele3}>Mac</a>
                 <div className="nav-content">
                     <ul>
                         <li><p>Explore Mac</p></li>
@@ -98,7 +129,7 @@ const NavBar = () => {
                     </ul>
                 </div>
             </NavLink>
-            <NavLink className='nav-link'><a>iPad</a>
+            <NavLink className='nav-link'><a ref={navele4}>iPad</a>
                 <div className="nav-content">
                     <ul>
                         <li><p>Explore iPad</p></li>
@@ -130,7 +161,7 @@ const NavBar = () => {
                 </div>                
             </NavLink>
 
-            <NavLink className='nav-link'><a>iPhone</a>
+            <NavLink className='nav-link'><a ref={navele5}>iPhone</a>
                 <div className="nav-content">
                     <ul>
                         <li><p>Explore iPhone</p></li>
@@ -163,7 +194,7 @@ const NavBar = () => {
                 </div>            
             </NavLink>
 
-            <NavLink className='nav-link'><a>Watch</a>
+            <NavLink className='nav-link'><a ref={navele6}>Watch</a>
                 <div className="nav-content">
                     <ul>
                         <li><p>Explore Watch</p></li>
@@ -194,7 +225,7 @@ const NavBar = () => {
                 </div>
             </NavLink>
 
-            <NavLink className='nav-link'><a>AirPods</a>
+            <NavLink className='nav-link'><a ref={navele7}>AirPods</a>
                 <div className="nav-content">
                     <ul>
                         <li><p>Explore AirPods</p></li>
@@ -218,7 +249,7 @@ const NavBar = () => {
                 </div>
             </NavLink>
 
-            <NavLink className='nav-link'><a>TV & Home</a>
+            <NavLink className='nav-link'><a ref={navele8}>TV & Home</a>
                 <div className="nav-content">
                     <ul>
                         <li><p>Explore TV & Home</p></li>
@@ -249,7 +280,7 @@ const NavBar = () => {
                 </div>
             </NavLink>
 
-            <NavLink className='nav-link'><a>Entertainment</a>
+            <NavLink className='nav-link'><a ref={navele9}>Entertainment</a>
                 <div className="nav-content">
                     <ul>
                         <li><p>Explore Entertainment</p></li>
@@ -272,7 +303,7 @@ const NavBar = () => {
                 </div>
             </NavLink>
 
-            <NavLink className='nav-link'><a>Accessories</a>
+            <NavLink className='nav-link'><a ref={navele10}>Accessories</a>
                 <div className="nav-content">
                     <ul>
                         <li><p>Shop All Accessories</p></li>
@@ -292,7 +323,7 @@ const NavBar = () => {
                 </div>
             </NavLink>
 
-            <NavLink className='nav-link'><a>Support</a>
+            <NavLink className='nav-link'><a ref={navele11}>Support</a>
                 <div className="nav-content">
                     <ul>
                         <li><p>Explore Support</p></li>
@@ -324,13 +355,13 @@ const NavBar = () => {
             </NavLink>
 
             <li>
-                <div className="nav-icons">
+                <div className="nav-icons" ref={navele12} >
                     <FiSearch className='nav-bar-logo' />
                 </div>
             </li>
 
             <li>
-                <div className="nav-icons ">
+                <div className="nav-icons "  ref={navele13}>
                     <AiOutlineShopping className='nav-bar-logo' />
                 </div>
             </li>
