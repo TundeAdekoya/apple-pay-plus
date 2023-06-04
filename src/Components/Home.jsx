@@ -17,8 +17,7 @@ const Home = () => {
   let divImg = useRef(null)
   
   useEffect(() => {
-    const tl = gsap.timeline({ paused: true });
-
+    
     gsap.fromTo(img3.current,
       {yPercent: 0, scale:1,},
       { 
@@ -31,7 +30,6 @@ const Home = () => {
           trigger: img3.current,
           start: "80% center", 
           toggleActions: 'restart pause reverse reset',
-          markers:true,
           scrub: true, 
         },})
 
@@ -45,7 +43,9 @@ const Home = () => {
           start: 'center center',
           toggleActions: 'restart pause reverse reset',
         }})
-
+        
+    const tl = gsap.timeline({ paused: true });
+    
     tl.fromTo(
       img1.current,
       { y: 30, opacity: 0,},
