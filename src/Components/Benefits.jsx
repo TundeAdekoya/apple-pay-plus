@@ -17,7 +17,7 @@ const Benefits = () => {
 
     benefitTl.to(
       text1.current,
-      {yPercent: -40, opacity:1.2, opacity:0, ease:'back.out', duration:5, scale:1.2,
+      {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.2,
       scrollTrigger:{
         trigger: text1.current,
         start: 'top top',
@@ -29,7 +29,7 @@ const Benefits = () => {
     
     .to(
       text2.current,
-      {yPercent: -40, opacity:1.2, opacity:0, ease:'back.out', duration:5, scale:1.2, delay:10,
+      {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.2, delay:10,
       scrollTrigger:{
         trigger: text2.current,
         start: 'top top',
@@ -41,7 +41,7 @@ const Benefits = () => {
       
       .to(
         text3.current,
-        {yPercent: -40, opacity:1.2, opacity:0, ease:'back.out', duration:5, scale:1.2,
+        {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.2,
         scrollTrigger:{
         trigger: text3.current,
         start: 'top top',
@@ -53,7 +53,7 @@ const Benefits = () => {
 
     .to(
       text4.current,
-      {yPercent: -40, opacity:1.2, opacity:0, ease:'back.out', duration:5, scale:1.2,
+      {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.2,
       scrollTrigger:{
         trigger: text4.current,
         start: 'top top',
