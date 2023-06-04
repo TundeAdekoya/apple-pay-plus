@@ -18,7 +18,7 @@ const PayWithPlus = () => {
       title.current,
       {
         yPercent:-20, opacity:0, duration:5, ease: "back.out", 
-        scale:1.2,
+        scale:1.3,
         scrollTrigger:{
             trigger: title.current,
             start: '0vw top',
