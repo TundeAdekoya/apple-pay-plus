@@ -22,13 +22,14 @@ const Home = () => {
     gsap.fromTo(img3.current,
       {yPercent: 0, scale:1,},
       { 
+        scale:1.2,
         // opacity:0,
-        yPercent: -30,
-        duration: 2,
+        yPercent: -45,
+        duration: 3,
         ease: "back.out",
         scrollTrigger: {
           trigger: img3.current,
-          start: "40% center", 
+          start: "80% center", 
           toggleActions: 'restart pause reverse reset',
           markers:true,
           scrub: true, 
