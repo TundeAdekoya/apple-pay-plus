@@ -30,7 +30,7 @@ const PayWithPlus = () => {
         ).to(
           text.current,
           {
-            yPercent:-30, opacity:0, duration:5, ease: "back.out", 
+            yPercent:-15, opacity:0, duration:5, ease: "back.out", 
             scale:1.1,
             scrollTrigger:{
               trigger:text.current,
