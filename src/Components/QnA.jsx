@@ -48,7 +48,7 @@ const QnA = () => {
             {yPercent:-20, opacity:0, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: qTwo.current,
-                start: 'top top',
+                start: 'bottom top',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
