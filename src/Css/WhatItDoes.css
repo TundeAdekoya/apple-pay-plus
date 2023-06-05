@@ -1,5 +1,6 @@
 #whatitdoes{
     padding: 80px 12% ;
+    overflow: hidden;
 }
 
 #whatitdoes h2{

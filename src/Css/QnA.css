@@ -1,6 +1,7 @@
 #questionandanswer{
     background-color: var(--neutral0);
     padding: 64px 12%;
+    overflow: hidden;
 }
 
 #questionandanswer h2{

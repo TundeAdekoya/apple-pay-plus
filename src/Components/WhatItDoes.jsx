@@ -86,7 +86,7 @@ const WhatItDoes = () => {
               },}
         ).fromTo(
             text1.current,
-            {xPercent: 60, opacity:0, scale:1.1,},
+            {xPercent: 30, opacity:0, scale:1.1,},
             { xPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: text1.current,
@@ -108,7 +108,7 @@ const WhatItDoes = () => {
               },}
         ).fromTo(
             text2.current,
-            {xPercent:60, opacity:0, scale:1.1,},
+            {xPercent:30, opacity:0, scale:1.1,},
             { xPercent:0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: text2.current,
@@ -130,7 +130,7 @@ const WhatItDoes = () => {
               },}
         ).fromTo(
             text3.current,
-            {xPercent: 60, scale:1.1, opacity:0},
+            {xPercent: 30, scale:1.1, opacity:0},
             { xPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: text3.current,

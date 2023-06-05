@@ -5,6 +5,7 @@
     justify-content: center;
     flex-direction: column;
     color: var(--text-primary-black);
+    overflow: hidden;
 }
 
 .benefit-text{
