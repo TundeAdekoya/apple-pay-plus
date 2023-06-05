@@ -1,8 +1,133 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { CgAdd } from 'react-icons/cg';
 import '../Css/QnA.css'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 const QnA = () => {
+
+    let title = useRef(null)
+    let qOne = useRef(null)
+    let qTwo = useRef(null)
+    let qThree = useRef(null)
+    let qFour = useRef(null)
+    let qFive = useRef(null)
+    let qSix = useRef(null)
+    let qSeven = useRef(null)
+    let qEight = useRef(null)
+    let qNine = useRef(null)
+
+    useEffect(() => {
+        const qnaTl = gsap.timeline({pause:true})
+
+        qnaTl.to(
+            title.current,
+            {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.3,
+            scrollTrigger:{
+                trigger: title.current,
+                start: 'top top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        ).to(
+            qOne.current,
+            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            scrollTrigger:{
+                trigger: qOne.current,
+                start: 'top top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        ).to(
+            qTwo.current,
+            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            scrollTrigger:{
+                trigger: qTwo.current,
+                start: 'top top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        ).to(
+            qThree.current,
+            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            scrollTrigger:{
+                trigger: qThree.current,
+                start: 'top top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        ).to(
+            qFour.current,
+            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            scrollTrigger:{
+                trigger: qFour.current,
+                start: 'top top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        ).to(
+            qFive.current,
+            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            scrollTrigger:{
+                trigger: qFive.current,
+                start: 'top top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        ).to(
+            qSix.current,
+            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            scrollTrigger:{
+                trigger: qSix.current,
+                start: 'top top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        ).to(
+            qSeven.current,
+            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            scrollTrigger:{
+                trigger: qSeven.current,
+                start: 'top top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        ).to(
+            qEight.current,
+            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            scrollTrigger:{
+                trigger: qEight.current,
+                start: 'top top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        ).to(
+            qNine.current,
+            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            scrollTrigger:{
+                trigger: qNine.current,
+                start: 'top top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        )
+
+        qnaTl .play()
+    }, [])
+    
 
     const [isVisible1, setIsVisible1] = useState(false)
     const linkRef1 = useRef(null);
@@ -60,10 +185,10 @@ const QnA = () => {
 
   return (
     <div id='questionandanswer'>
-        <h2 style={{ fontFamily: "SFProDisplayBold" }} >Questions? Answers.</h2>
+        <h2 style={{ fontFamily: "SFProDisplayBold" }} ref={title}>Questions? Answers.</h2>
         <section className="qna-content">
 
-            <div className='qna'>
+            <div className='qna' ref={qOne}>
                 <div className='qna-top'>
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} 
                     onClick={toggleVisibility1} 
@@ -83,7 +208,7 @@ const QnA = () => {
                 </div>
             </div>
 
-            <div className='qna'>
+            <div className='qna' ref={qTwo}>
                 <div className='qna-top'>
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} 
                     onClick={toggleVisibility2} >How secure is Apple Pay Plus?</h3>
@@ -104,7 +229,7 @@ const QnA = () => {
                 </div>
             </div>
 
-            <div className='qna'>
+            <div className='qna' ref={qThree}>
                 <div className='qna-top'>
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} 
                     onClick={toggleVisibility3}>How do I use Apple Pay Plus?</h3>
@@ -125,7 +250,7 @@ const QnA = () => {
                 </div>
             </div>
 
-            <div className='qna'>
+            <div className='qna' ref={qFour}>
                 <div className='qna-top'>
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} 
                     onClick={toggleVisibility4} >Which banks support Apple Pay Plus?</h3>
@@ -145,7 +270,7 @@ const QnA = () => {
                 </div>
             </div>
 
-            <div className='qna'>
+            <div className='qna' ref={qFive}>
                 <div className='qna-top'>
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} 
                      onClick={toggleVisibility5} >Does it cost extra to use Apple Pay Plus?</h3>
@@ -165,7 +290,7 @@ const QnA = () => {
                 </div>
             </div>
 
-            <div className='qna'>
+            <div className='qna' ref={qSix}>
                 <div className='qna-top'>
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} 
                      onClick={toggleVisibility6} >Can I use Apple Pay Plus abroad?</h3>
@@ -185,7 +310,7 @@ const QnA = () => {
                 </div>
             </div>
 
-            <div className='qna'>
+            <div className='qna' ref={qSeven}>
                 <div className='qna-top'>
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} 
                      onClick={toggleVisibility7} >How can my business accept Apple Pay Plus?</h3>
@@ -205,7 +330,7 @@ const QnA = () => {
                 </div>
             </div>
 
-            <div className='qna'>
+            <div className='qna' ref={qEight}>
                 <div className='qna-top'>
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} 
                      onClick={toggleVisibility8} >Does my business need any special equipment to accept Apple Pay Plus?</h3>
@@ -226,7 +351,7 @@ const QnA = () => {
                 </div>
             </div>
 
-            <div className='qna'>
+            <div className='qna' ref={qNine}>
                 <div className='qna-top'>
                     <h3 style={{ fontFamily: "SFProDisplayMedium" }} 
                      onClick={toggleVisibility9} >How do I let my customers know I accept Apple Pay Plus?</h3>
