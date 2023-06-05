@@ -1,16 +1,78 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import '../Css/SafeAndSecure.css'
 import SafeAndSecure1 from '../Assets/svg/safeandsecure1.svg'
 import SafeAndSecure2 from '../Assets/svg/safeandsecure2.svg'
 import SafeAndSecure3 from '../Assets/svg/safeandsecure3.svg'
 
+import { gsap } from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const SafeAndSecure = () => {
+
+    let title = useRef(null)
+    let img1 = useRef(null)
+    let img2 = useRef(null)
+    let img3 = useRef(null)
+
+    
+    useEffect(() => {
+        const safeandsecureTl = gsap.timeline({pause: true})
+
+        safeandsecureTl.to(
+            title.current,
+            {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.3,
+            scrollTrigger:{
+                trigger: title.current,
+                start: 'top top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        ).to(
+            img1.current,
+            {xPercent: -40, opacity:0, ease:'back.out', duration:3, scale:1.2,
+            scrollTrigger:{
+                trigger: img1.current,
+                start: '70vh top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        ).to(
+            img2.current,
+            {yPercent: -40, opacity:0, ease:'back.out', duration:3, scale:1.2,
+            scrollTrigger:{
+                trigger: img2.current,
+                start: '70vh top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        ).to(
+            img3.current,
+            {xPercent: 40, opacity:0, ease:'back.out', duration:3, scale:1.2,
+            scrollTrigger:{
+                trigger: img3.current,
+                start: '70vh top',
+                bottom: 'bottom bottom',
+                toggleActions: 'restart pause reverse reset',
+                scrub: true
+              },}
+        )
+        
+        safeandsecureTl.play()
+
+    }, [])
+    
+
   return (
     <div id='safeandsecure'>
-        <h2 style={{ fontFamily: "SFProDisplayMedium" }} >Safe and secure.</h2>
+        <h2 style={{ fontFamily: "SFProDisplayMedium" }} ref={title}>Safe and secure.</h2>
         <div className="safeandsecure-content">
 
-            <div className="safeandsecure-content-one">
+            <div className="safeandsecure-content-one" ref={img1}>
                 <div className="safeandsecure-img">
                     <img src={SafeAndSecure1} alt="" />
                 </div>
@@ -20,7 +82,7 @@ const SafeAndSecure = () => {
                 </div>
             </div>
 
-            <div className="safeandsecure-content-one">
+            <div className="safeandsecure-content-one" ref={img2}>
                 <div className="safeandsecure-img">
                     <img src={SafeAndSecure2} alt="" />
                 </div>
@@ -30,7 +92,7 @@ const SafeAndSecure = () => {
                 </div>
             </div>
 
-            <div className="safeandsecure-content-one">
+            <div className="safeandsecure-content-one" ref={img3}>
                 <div className="safeandsecure-img">
                     <img src={SafeAndSecure3} alt="" />
                 </div>

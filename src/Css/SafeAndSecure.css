@@ -1,6 +1,7 @@
 #safeandsecure{
     background-color: var(--neutral950);
     padding: 96px 5%;
+    overflow: hidden;
 }
 
 #safeandsecure h2{
