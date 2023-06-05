@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     
     gsap.fromTo(img3.current,
-      {yPercent: 0, scale:1,},
+      {yPercent: 0, scale:1},
       { 
         scale:1.2,
         // opacity:0,

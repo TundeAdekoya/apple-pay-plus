@@ -10,14 +10,14 @@ const GetStarted = () => {
   let title = useRef(null)
 
   useEffect(() => {
-    gsap.to(
+    gsap.fromTo(
       title.current,
+      {yPercent:-20, opacity:0, scale:1.3,},
       {
-        yPercent:-20, opacity:0, duration:5, ease: "back.out", 
-        scale:1.3,
+        yPercent:0, opacity:1, duration:5, ease: "back.out", scale:1,
         scrollTrigger:{
             trigger: title.current,
-            start: '0vw top',
+            start: 'top 100%',
             bottom: '100% 100vh',
             toggleActions: 'restart pause reverse reset',
             scrub: true

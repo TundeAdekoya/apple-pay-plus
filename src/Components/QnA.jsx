@@ -23,102 +23,112 @@ const QnA = () => {
     useEffect(() => {
         const qnaTl = gsap.timeline({pause:true})
 
-        qnaTl.to(
+        qnaTl.fromTo(
             title.current,
-            {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.3,
+            {yPercent: -40, opacity:0, scale:1.3},
+            {yPercent: 0, opacity:1, ease:'back.out', duration:5, scale:1,
             scrollTrigger:{
                 trigger: title.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             qOne.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0,},
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: qOne.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             qTwo.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0,},
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: qTwo.current,
-                start: 'bottom top',
+                start: 'bottom 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             qThree.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0,},
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: qThree.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             qFour.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0,},
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: qFour.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             qFive.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0,},
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: qFive.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             qSix.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0,},
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: qSix.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             qSeven.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0,},
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: qSeven.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             qEight.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0,},
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: qEight.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             qNine.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0,},
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: qNine.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true

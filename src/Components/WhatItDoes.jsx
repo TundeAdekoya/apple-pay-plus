@@ -29,102 +29,112 @@ const WhatItDoes = () => {
     useEffect(() => {
         const whatitdoesTl = gsap.timeline({pause: true})
 
-        whatitdoesTl.to(
+        whatitdoesTl.fromTo(
             title.current,
-            {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.3,
+            {opacity:0, scale:1.3, yPercent: -40 },
+            {yPercent:0, opacity:1, ease:'back.out', duration:5, scale:1,
             scrollTrigger:{
                 trigger: title.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             img1.current,
-            { xPercent: -60, opacity:0, ease:'back.out', duration:3, scale:1.1,
+            {xPercent: -60, scale:1.1, opacity:0,},
+            { xPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: img1.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             imgmobile1.current,
-            { yPercent: -40, opacity:0, ease:'back.out', duration:3, scale:1.2,
+            {yPercent: -40, opacity:0, scale:1.2,},
+            { yPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: imgmobile1.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             imgmobile2.current,
-            { yPercent: -40, opacity:0, ease:'back.out', duration:3, scale:1.2,
+            { yPercent: -40, opacity:0, scale:1.2,},
+            { yPercent:0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: imgmobile2.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             imgmobile3.current,
-            { yPercent: -40, opacity:0, ease:'back.out', duration:3, scale:1.2,
+            {yPercent: -40, opacity:0, scale:1.2,},
+            { yPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: imgmobile3.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             text1.current,
-            { xPercent: 60, opacity:0, ease:'back.out', duration:3, scale:1.1,
+            {xPercent: 60, opacity:0, scale:1.1,},
+            { xPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: text1.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             img2.current,
-            { xPercent: -60, opacity:0, ease:'back.out', duration:3, scale:1.1,
+            {xPercent: -60, opacity:0, scale:1.1,},
+            { xPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: img2.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             text2.current,
-            { xPercent: 60, opacity:0, ease:'back.out', duration:3, scale:1.1,
+            {xPercent:60, opacity:0, scale:1.1,},
+            { xPercent:0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: text2.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             img3.current,
-            { xPercent: -60, opacity:0, ease:'back.out', duration:3, scale:1.1,
+            {xPercent: -60, opacity:0, scale:1.1},
+            { xPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: img3.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             text3.current,
-            { xPercent: 60, opacity:0, ease:'back.out', duration:3, scale:1.1,
+            {xPercent: 60, scale:1.1, opacity:0},
+            { xPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: text3.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true

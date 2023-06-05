@@ -15,48 +15,52 @@ const Benefits = () => {
     
     const benefitTl = gsap.timeline({pause: true})
 
-    benefitTl.to(
+    benefitTl.fromTo(
       text1.current,
-      {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.2,
+      {opacity:0, scale:1.2},
+      {yPercent: -40, opacity:1, ease:'back.out', duration:5, scale:1,
       scrollTrigger:{
         trigger: text1.current,
-        start: 'top top',
+        start: 'top 100%',
         bottom: 'bottom bottom',
         toggleActions: 'restart pause reverse reset',
         scrub: true
       },}
     )
     
-    .to(
+    .fromTo(
       text2.current,
-      {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.2, delay:10,
+      {opacity:0, scale:1.2},
+      {yPercent: -40, opacity:1, ease:'back.out', duration:5, scale:1, delay:10,
       scrollTrigger:{
         trigger: text2.current,
-        start: 'top top',
+        start: 'top 100%',
         bottom: 'bottom bottom',
         toggleActions: 'restart pause reverse reset',
         scrub: true
       },}
       )
       
-      .to(
+      .fromTo(
         text3.current,
-        {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.2,
+        {opacity:0, scale:1.2},
+        {yPercent: -40, opacity:1, ease:'back.out', duration:5, scale:1,
         scrollTrigger:{
         trigger: text3.current,
-        start: 'top top',
+        start: 'top 100%',
         bottom: 'bottom bottom',
         toggleActions: 'restart pause reverse reset',
         scrub: true
       },}
     )
 
-    .to(
+    .fromTo(
       text4.current,
-      {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.2,
+      {opacity:0, scale:1.2},
+      {yPercent: -40, opacity:1, ease:'back.out', duration:5, scale:1,
       scrollTrigger:{
         trigger: text4.current,
-        start: 'top top',
+        start: 'top 100%',
         bottom: 'bottom bottom',
         toggleActions: 'restart pause reverse reset',
         scrub: true

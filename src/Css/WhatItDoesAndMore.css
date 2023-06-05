@@ -1,5 +1,6 @@
 #WhatItDoesAndMore{
     padding: 80px 12%;
+    overflow: hidden;
 }
 
 #WhatItDoesAndMore h2{
@@ -17,7 +18,7 @@
 
 .WhatItDoesAndMore-content p{
     font-size: 64px;
-    color: var(--neutral400);
+    color: var(--text-disabled-black);
 }
 
 .whatitdoesandmore-img{

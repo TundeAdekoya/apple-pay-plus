@@ -9,12 +9,13 @@ const AppleCard = () => {
   let card = useRef(null)
 
   useEffect(() => {
-    gsap.to(
+    gsap.fromTo(
       card.current,
-      { opacity:1.2, opacity:0, ease:'back.out', duration:5,
+      {opacity:0},
+      { opacity:1, ease:'back.out', duration:5,
       scrollTrigger:{
         trigger: card.current,
-        start: 'top top',
+        start: 'top 100%',
         bottom: 'bottom bottom',
         toggleActions: 'restart pause reverse reset',
         scrub: true

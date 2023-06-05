@@ -24,42 +24,46 @@ const CardSection = () => {
     useEffect(() => {
         const cardsectionTl = gsap.timeline({pause: true})
 
-        cardsectionTl.to(
+        cardsectionTl.fromTo(
             img1.current,
-            { xPercent: -60, opacity:0, ease:'back.out', duration:3, scale:1.2,
+            {xPercent: -60, opacity:0, scale:1.2},
+            { xPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: img1.current,
-                start: '40% top',
+                start: '10% 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             img2.current,
-            { xPercent: 60, opacity:0, ease:'back.out', duration:3, scale:1.2,
+            {xPercent: 60, opacity:0, scale:1.2},
+            { xPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: img2.current,
-                start: '40% top',
+                start: '10% 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             img3.current,
-            { xPercent: -60, opacity:0, ease:'back.out', duration:3, scale:1.2,
+            {xPercent: -60, opacity:0, scale:1.2},
+            { xPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: img3.current,
-                start: '40% top',
+                start: '10% 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             img4.current,
-            { xPercent: 60, opacity:0, ease:'back.out', duration:3, scale:1.2,
+            {xPercent: 60, opacity:0, scale:1.2},
+            { xPercent: 0, opacity:1, ease:'back.out', duration:3, scale:1,
             scrollTrigger:{
                 trigger: img4.current,
-                start: '40% top',
+                start: '10% 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true

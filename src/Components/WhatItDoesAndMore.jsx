@@ -31,112 +31,123 @@ const WhatItDoesAndMore = () => {
     useEffect(() => {
         const doesandmoreTl = gsap.timeline({pause:true})
 
-        doesandmoreTl.to(
+        doesandmoreTl.fromTo(
             title.current,
-            {yPercent: -40, opacity:0, ease:'back.out', duration:5, scale:1.3,
+            {yPercent: -40, opacity:0, scale:1.3,},
+            {yPercent: 0, opacity:1, ease:'back.out', duration:5, scale:1,
             scrollTrigger:{
                 trigger: title.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             text1.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0,},
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: text1.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             text2.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0,},
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: text2.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             text3.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0, },
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: text3.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             text4.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0, },
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: text4.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             text5.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0, },
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: text5.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             text6.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0, },
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: text6.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             text7.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0, },
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: text7.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             text8.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0, },
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: text8.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             text9.current,
-            {yPercent:-20, opacity:0, ease:'back.out', duration:3,
+            {yPercent:-20, opacity:0, },
+            {yPercent:0, opacity:1, ease:'back.out', duration:3,
             scrollTrigger:{
                 trigger: text9.current,
-                start: 'top top',
+                start: 'top 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
               },}
-        ).to(
+        ).fromTo(
             img1.current,
-            {yPercent:-40, opacity:0, ease:'back.out', duration:5,
+            {yPercent:-40, opacity:0, scale:1.3},
+            {yPercent:0, opacity:1, ease:'back.out', duration:5, scale:1,
             scrollTrigger:{
                 trigger: img1.current,
-                start: 'center top',
+                start: '20% 100%',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
