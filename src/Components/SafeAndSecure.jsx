@@ -35,7 +35,7 @@ const SafeAndSecure = () => {
             {xPercent: -40, opacity:0, ease:'back.out', duration:3, scale:1.2,
             scrollTrigger:{
                 trigger: img1.current,
-                start: '70vh top',
+                start: '60% top',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
@@ -45,7 +45,7 @@ const SafeAndSecure = () => {
             {yPercent: -40, opacity:0, ease:'back.out', duration:3, scale:1.2,
             scrollTrigger:{
                 trigger: img2.current,
-                start: '70vh top',
+                start: '60% top',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
@@ -55,7 +55,7 @@ const SafeAndSecure = () => {
             {xPercent: 40, opacity:0, ease:'back.out', duration:3, scale:1.2,
             scrollTrigger:{
                 trigger: img3.current,
-                start: '70vh top',
+                start: '60% top',
                 bottom: 'bottom bottom',
                 toggleActions: 'restart pause reverse reset',
                 scrub: true
