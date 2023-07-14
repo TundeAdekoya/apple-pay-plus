@@ -378,16 +378,16 @@ const NavBar = () => {
             </li>
 
             <div className="nav-mobile" ref={navRef}>
-                <NavLink className='nav-link'><a>Store</a></NavLink>
-                <NavLink className='nav-link'><a>Mac</a></NavLink>
-                <NavLink className='nav-link'><a>iPad</a></NavLink>
-                <NavLink className='nav-link'><a>iPhone</a></NavLink>
-                <NavLink className='nav-link'><a>Watch</a></NavLink>
-                <NavLink className='nav-link'><a>AirPods</a></NavLink>
-                <NavLink className='nav-link'><a>TV & Home</a></NavLink>
-                <NavLink className='nav-link'><a>Entertainment</a></NavLink>
-                <NavLink className='nav-link'><a>Accessories</a></NavLink>
-                <NavLink className='nav-link'><a>Support</a></NavLink>
+                <NavLink className='nav-link' onClick={showNavbar} ><a>Store</a></NavLink>
+                <NavLink className='nav-link' onClick={showNavbar} ><a>Mac</a></NavLink>
+                <NavLink className='nav-link' onClick={showNavbar} ><a>iPad</a></NavLink>
+                <NavLink className='nav-link' onClick={showNavbar} ><a>iPhone</a></NavLink>
+                <NavLink className='nav-link' onClick={showNavbar} ><a>Watch</a></NavLink>
+                <NavLink className='nav-link' onClick={showNavbar} ><a>AirPods</a></NavLink>
+                <NavLink className='nav-link' onClick={showNavbar} ><a>TV & Home</a></NavLink>
+                <NavLink className='nav-link' onClick={showNavbar} ><a>Entertainment</a></NavLink>
+                <NavLink className='nav-link' onClick={showNavbar} ><a>Accessories</a></NavLink>
+                <NavLink className='nav-link' onClick={showNavbar} ><a>Support</a></NavLink>
                 <div className= 'nav-icons nav-close-btn' onClick={showNavbar}>
                     <MdClose className='nav-bar-logo' />
                 </div>  
